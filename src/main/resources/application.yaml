@@ -1,3 +1,15 @@
 spring:
   application:
     name: com.seatflow-backend
+    
+  datasource:
+    url: jdbc:postgresql://localhost:5432/seatflow
+    username: postgres
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+     ddl-auto: update
+    show-sql: true
+    
+server:
+    port: 8081
